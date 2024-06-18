@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .image-container div {
+            text-align: center;
+        }
+        .image-container h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pixel Art Result</h1>
+        <div class="image-container">
+            <div>
+                <h2>Before</h2>
+                <img src="{{ url_for('static', filename='input.png') }}" alt="Before">
+            </div>
+            <div>
+                <h2>After</h2>
+                <img src="{{ url_for('static', filename='output.png') }}" alt="Pixel Art">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
