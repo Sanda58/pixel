@@ -1,6 +1,6 @@
 # Pixel Art Converter
 
-Pixel Art Converter adalah sebuah aplikasi sederhana berbasis web yang memungkinkan Anda untuk mengubah gambar menjadi pixel art menggunakan teknik resizing dengan algoritma NEAREST. Aplikasi ini dibangun dengan menggunakan Flask dan PIL (Python Imaging Library).
+Pixel Art Converter adalah sebuah aplikasi sederhana berbasis web yang memungkinkan untuk mengubah gambar menjadi pixel art menggunakan teknik resizing dengan algoritma NEAREST. Aplikasi ini dibangun dengan menggunakan Flask dan PIL (Python Imaging Library).
 
 ## Penggunaan
 
